@@ -10,3 +10,94 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.container{
+    width: 47rem;
+    border: 0.0625rem solid black;
+    border-radius:0.625rem;
+    background: rgb(163, 212, 239);
+    border: none;
+    margin-top: 3.125rem;
+
+}
+
+.title{
+    text-align: center;
+    text-decoration: underline;
+    color:blue;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.task{
+    width: 22rem;
+}
+ol{
+    padding: 0.0625rem;
+    padding-top: 0.438rem;
+}
+
+li{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border: 3px solid rgb(123, 183, 211);
+    border-radius: 5px;
+    padding-left:5px;
+    display: flex;
+    align-items: justify;
+    color:blue;
+    width: 45.4rem;
+}
+
+
+
+.delete, .completedTask{
+    
+    border: none;
+    font-size: 1rem;
+;
+}
+/*
+.completedTask{
+    margin-left: 120px;
+    border: none;
+    font-size: 1rem;
+}
+*/
+.task{
+    flex: 1;
+}
+.completed {
+    text-decoration: line-through;
+    color: #a9a9a9;
+  }
+
+  @keyframes tearAway {
+    0% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      transform: rotate(20deg) translateX(50px) translateY(-50px);
+      opacity: 0.8;
+    }
+    100% {
+      transform: rotate(360deg) translateX(450px) translateY(-250px);
+      opacity: 0;
+    }
+  }
+  
+  .tearingAway {
+    animation: tearAway 0.8s forwards;
+  }
+
+  .counter{
+    margin-left: 31rem;
+  }
+  .totaltasks, .pipe, .totalcompleted{
+    border-radius: 3px;
+    
+    color: brown;
+    font-weight: bold;
+  }
+  
+  
