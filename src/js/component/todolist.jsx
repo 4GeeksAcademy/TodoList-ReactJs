@@ -7,6 +7,7 @@ function ToDoList() {
     const [tasks, setTask]=useState([]);
     const [newTask, setNewTask]=useState([]);
     const [isTearing, setIsTearing]=useState(false)
+    const [isCompleted, setIscompleted]=useState(false)
 
 
     function handleInputChange(event){
@@ -32,7 +33,7 @@ function ToDoList() {
       const updateTasks=tasks.filter((_, i)=> i !==index);
       setTask(updateTasks);
     }
-
+   
     
    
     const completedTasksCount = tasks.filter((task) => task.isCompleted).length;
@@ -80,7 +81,7 @@ function ToDoList() {
                 {task}
             </span>
             <Button className='add' variant="outline-success" 
-            onClick={() => toggleCompletion(index)}>
+            onClick={() => MasrkasCompleted(index)}>
             {tasks.isCompleted ? "Mark as Uncompleted" : "Mark as Completed"}
              
              
